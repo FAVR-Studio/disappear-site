@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>disappear Daily</title>
+<meta name="description" content="A friend shared today's Daily: the same maze for everyone today. Can you beat it?">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="disappear">
+<meta property="og:title" content="disappear: Memory Maze">
+<meta property="og:description" content="Same maze for everyone today. Can you beat it?">
+<meta property="og:url" content="https://favr-studio.github.io/disappear-site/daily/">
+<meta property="og:image" content="https://favr-studio.github.io/disappear-site/daily/preview.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The disappear pear on a maze: Daily challenge, same maze for everyone today.">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<main>
+  <a class="wordmark" href="../">disappear</a>
+  <p class="tagline">A few seconds to look. Then the walls disappear.</p>
+  <h1 id="daily">Today's Daily</h1>
+  <p class="updated">Same maze for everyone today. Can you beat your friend's time?</p>
+
+  <div class="card">
+    <h2>Have disappear?</h2>
+    <p>Open it and tap <strong>Daily</strong>. Your first run goes on the Memory board, because that is the one where you really have to remember the maze. Your fastest run of the day goes on Best.</p>
+  </div>
+
+  <div class="card">
+    <h2>Get disappear</h2>
+    <p>A memory maze game: look at the maze, remember it, then lead the pear to the exit after the walls are gone.</p>
+    <!-- When the game is live, turn each span into a link:
+         App Store: <a class="store" href="https://apps.apple.com/app/idAPPLE_ID">App Store</a>
+         Google Play: <a class="store" href="https://play.google.com/store/apps/details?id=com.favr.disappear">Google Play</a> -->
+    <div class="stores">
+      <span class="store soon">App Store · coming soon</span>
+      <span class="store soon">Google Play · coming soon</span>
+    </div>
+  </div>
+
+  <footer><a href="../support/">Support</a> · <a href="../privacy/">Privacy policy</a> · <a href="../">Home</a></footer>
+</main>
+<script>
+  // The shared link names the Daily: ?n=12 shows "Daily #12". Nothing is stored or sent.
+  var n = new URLSearchParams(location.search).get("n");
+  if (n && /^[0-9]{1,5}$/.test(n) && +n > 0) {
+    document.getElementById("daily").textContent = "Daily #" + (+n);
+    document.title = "disappear Daily #" + (+n);
+  }
+</script>
+</body>
+</html>

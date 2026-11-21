@@ -16,3 +16,7 @@ h2 { font-size: 20px; margin: 32px 0 8px; color: var(--lime); }
 .links a { background: var(--panel); border-radius: 12px; padding: 12px 18px; text-decoration: none; font-weight: 600; }
 footer { color: var(--dim); font-size: 14px; margin-top: 48px; border-top: 1px solid #1c2a3a; padding-top: 16px; }
 ul { padding-left: 22px; }
+.stores { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 16px; }
+.store { display: inline-block; border-radius: 12px; padding: 12px 18px; font-weight: 600; text-decoration: none; background: var(--cyan); color: var(--bg); }
+.store.soon { background: transparent; color: var(--dim); border: 1px solid #2a3b4d; }
+.card h2:first-child { margin-top: 0; }
